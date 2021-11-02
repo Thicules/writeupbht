@@ -9,9 +9,10 @@ Vẽ được lưu đồ thuật toán cho các bài toán đơn giản.</p>
 ## 2) Recode #1.
   ![image](https://user-images.githubusercontent.com/93419631/139905083-51da9c84-73fd-4fcf-a030-90085d883e7d.png)</p>
   Hướng làm:</p>
-- Muốn có $(x^11)$ ta phải lấy đươc </p>
+- Muốn có x^11 ta phải lấy đươc x^5 -> x^2 </p>
 -Để biết được ta cần lấy những số nào ta sẽ chia cho 2:</p>
-  VD: 11/2= 5 dư 1, 5/2=2 dư 2/2=1 dư 0 chia cho đến khi dư 0, khoảng ngoài để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.
+  VD: 11/2= 5 dư 1, 5/2=2 dư 2/2=1 dư 0 chia cho đến khi dư 0, khoảng ngoài để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.</p>
+  **Câu 2** Tính tổng các chữ số cúa os nguyên n.</p>
 
 
 
