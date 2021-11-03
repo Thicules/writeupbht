@@ -75,7 +75,7 @@ Hướng làm:</p>
 - Sử dụng biến num để tính tử, biến den để tính mẫu và dùng biến s để tính tổng.</p>
 - Sau đó cho vòng lặp để chạy từ 1 đến n, mỗi lần lặp cho biến num nhân thêm x và biến den cộng thêm, tiếp đó tính tổng s=s+num/den.</p>
 <Cau4>![image](https://user-images.githubusercontent.com/93419631/140007121-6a6c7f26-36aa-4979-88c4-41f59939b665.png) </p>
-Hướng làm:</p>
+**Code:**</p>
 ```
 #include <iostream>
 using namespace std;
@@ -95,6 +95,7 @@ int main()
     return 0;
 }
 ```
+Hướng làm: </P>
 - Ta nhận thấy sau mỗi số hạng thì nhân thêm x2  và sẽ đan dấu với nhau. </p>
 - Ta dùng biến s để tính tổng các số hạng, biến t tính mỗi số hạng i.</p>
 - Để tiết kiệm số phép tính nhân đầu tiên sẽ tính x2(x=x*x) trước.</p>
@@ -102,6 +103,26 @@ int main()
 - Cuói cùng ta sẽ tính tổng s (s=s+t).</p>
 <Cau5>![image](https://user-images.githubusercontent.com/93419631/140030913-aacd626c-a3fd-4cd2-bfc9-c65f874d7b66.png)</p>
 **Code:** </p>
+```
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int x,n,t;
+    float s;
+    cin>>x>>n;
+    s=0;
+    t=1;
+    for (int i=1;i<=n;++i){
+        t=t*x;
+        s=sqrt(t+s);
+    }
+    cout<<s;
+    return 0;
+}
+```
 Hướng làm:</p>
 - Nhận thấy sau mỗi lần căn mũ của x sẽ lên 1 đơn vị.</p>
 - Ta sẽ tính căn từ trong ra ngoài. Dùng biến biến s để tính tổng, biến t để tính x^i.</p>
