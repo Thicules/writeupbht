@@ -29,7 +29,7 @@ int main(){
   VD: 11\2= 5 dư 1, 5\2=2 dư 2\2=1 dư 0 chia cho đến khi dư 0, khoảng ngoài để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.</p>
   **Câu 2** Tính tổng các chữ số cúa số nguyên n.</p>
   **Code:** </p>
-``
+```
 #include <iostream>
 using namespace std;
 
@@ -51,6 +51,26 @@ int main()
  - Ngoài ra còn có thể dùng cách khác đó là chia lấy dư cho 10 để làm.</p>
  ![image](https://user-images.githubusercontent.com/93419631/139914060-3bd71c5b-72df-4bb4-8fca-9a18333b3866.png)</p> <cau3>
 **Code:** </p>
+```
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x,n;
+    float s,num,den;
+    cin>>x>>n;
+    s=0;
+    num=1;
+    den=0;
+    for (int i=1;i<=n;i++){
+        num=num*x;
+        den=den+i;
+        s=s+num/den;
+    }
+    cout<<s;
+    return 0;
+}
+```
 Hướng làm:</p>
 - Sử dụng biến num để tính tử, biến den để tính mẫu và dùng biến s để tính tổng.</p>
 - Sau đó cho vòng lặp để chạy từ 1 đến n, mỗi lần lặp cho biến num nhân thêm x và biến den cộng thêm, tiếp đó tính tổng s=s+num/den.</p>
