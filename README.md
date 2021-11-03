@@ -154,6 +154,104 @@ Hướng làm:</p>
 - Đầu tiên một tổng có độ chính xác 10^-6  là gì? Một tổng có độ chính xác 10^-6 là số hạng nhỏ nhất trong tổng đó sẽ >=10-6 sẽ chính xác đến  6 số thập phân không chính xác hơn hơn 6 số thập phân.</p>
 - Vì vậy ta dùng một hàng số e=10^-6 để so sánh độ chính xác, dùng biến s để lưu cái tổng đó, ta sẽ tính s=s+1/i cho đến khi 1/i nhỏ hơn e (Trong phần dùng code dùng 1.0/i để ép kiểu số thực).</p>
 - Trong phần code còn sử dụng hàm setprecision trong thư viện < iomanip > đẻ hiện được 6 số thập phân.</p>
+![image](https://user-images.githubusercontent.com/93419631/140117692-a01d3d8d-fe3c-4991-b893-3bae6006e498.png)</p>
+**Code:**</p>
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,a,in3,in7;
+    cin>>n;
+    a=-2;
+    in3=6;
+    in7=42;
+    for (int i=2;i<=n;++i){
+        in3=in3*3;
+        in7=in7*7;
+        a=5*a+in3-in7+12;
+    }
+    cout<<a;
+    return 0;
+}
+```
+Hướng làm:</p>
+-  Đầu tiên ta sẽ thấy số thứ n có công thức tổng quát với a1=-2.</p>
+- Biến a chính là a1=-2, biến in3 và in7 dùng để lưu các số hàng sau mỗi vòng lập ta sẽ nhân lên và dùng biến a để tính số hạng thứ i.</p>
+![image](https://user-images.githubusercontent.com/93419631/140119896-1a0d8ffb-ced7-460a-989d-a81762ffa58f.png)</p><cau8>
+**Code:**</p>
+```
+#include <iostream>
+using namespace std;
+bool can(float a,float b,float c){
+    if (a==b||a==c||b==c){
+        return true;
+    } else return false;
+}
+bool deu(float a,float b,float c){
+    if (a==b&&b==c){
+        return true;
+    } else return false;
+}
+bool vuong(float a,float b,float c){
+    if (a*a==b*b+c*c||b*b==a*a+c*c||c*c==a*a+b*b){
+        return true;
+    } else return false;
+}
+bool nhon (float a,float b,float c){
+        if (a*a<b*b+c*c&&b*b<a*a+c*c&&c*c<a*a+b*b){
+            return true;
+        }else return false;
+}
+
+int main(){
+    float x,y,z;
+    cin>>x>>y>>z;
+    if (x<0||y<0||z<0||abs(x-y)>=z||z>=x+y){
+        cout<<"Nhap sai ";
+        return 0;
+    }
+    if (vuong(x,y,z)==true){
+        if (can(x,y,z)==true){
+            cout<<"Tam giac vuong can";
+            return 0;
+        } else
+            {
+                cout<<"Tam giac vuong";
+                return 0;
+            }
+
+    }
+    if (deu(x,y,z)==true){
+        cout<<"Tam giac deu";
+        return 0;
+    }
+    if (can(x,y,z)==true){
+        cout<<"Tam giac can";
+        return 0;
+    }
+    if (nhon(x,y,z)==true){
+        cout<<"Tam giac nhon";
+        return 0;
+    }else{
+        cout<<"Tam giac tu";
+        return 0;
+        }
+    return 0;
+}
+```
+Hướng làm:</p>
+- Để xét định là tam giác gì ta sẽ sử dụng hệ quả  của định lý Pitago đảo.</p>
+- Đầu tiên, ta sẽ kiểm trả các cạnh mình nhập có tạo thành tam giác không.</p>
+- Tiếp sau xét xem đó làm giác gì:</p>
++Khi có bình phương một cạnh  bằng tổng bình các bình phương hai cạnh còn lại là tam giác vuông.</p>
++Khi có bình phương  một cạnh  lớn hơn tổng bình các bình phương hai cạnh còn lại là tam giác tù.</p>
++Khi có bình phương một cạnh bất kì nhỏ hơn tổng bình các bình phương  hai cạnh còn lại là tam giác nhọn.</p>
++Có hai cạnh bằng nhau  là tam giác cần.</p>
++có ba cạnh bằng nhau là tam giác đều.</p>
+( Sẽ có tam giác vừa vuông vừa cân nên trong tam giác vuông phải xét thêm tam giác cân. Lưu ý: phải xét tam giác đều trước khi xét tam giác cân).</p>
+
 
 
 
