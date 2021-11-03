@@ -27,6 +27,21 @@ Hướng làm:</p>
 - Để tiết kiệm số phép tính nhân đầu tiên sẽ tính x2(x=x*x) trước.</p>
 - Để các số hạng đổi đẩu dấu sau mỗi lần lặp ta sẽ nhân với (-1) [t=t*x*(-1)].</p>
 - Cuói cùng ta sẽ tính tổng s (s=s+t).</p>
+![image](https://user-images.githubusercontent.com/93419631/140030913-aacd626c-a3fd-4cd2-bfc9-c65f874d7b66.png)</p>
+Hướng làm:</p>
+- Nhận thấy sau mỗi lần căn mũ của x sẽ lên 1 đơn vị.</p>
+- Ta sẽ tính căn từ trong ra ngoài. Dùng biến biến s để tính tổng, biến t để tính x^i.</p>
+(Bài này để tính căn bậc 2 sẽ sử dụng hàm sqrt bằng cách sài thư viện <math.h>).</p>
+![image](https://user-images.githubusercontent.com/93419631/140033120-48af12ac-cb02-409b-b559-39c0cfd419bb.png)</p>
+Hướng làm:</p>
+- Đầu tiên một tổng có độ chính xác 10^-6  là gì? Một tổng có độ chính xác 10^-6 là số hạng nhỏ nhất trong tổng đó sẽ >=10-6 sẽ chính xác đến  6 số thập phân không chính xác hơn hơn 6 số thập phân.</p>
+- Vì vậy ta dùng một hàng số e=10^-6 để so sánh độ chính xác, dùng biến s để lưu cái tổng đó, ta sẽ tính s=s+1/i cho đến khi 1/i nhỏ hơn e (Trong phần dùng code dùng 1.0/i để ép kiểu số thực).</p>
+- Trong phần code còn sử dụng hàm setprecision trong thư viện < iomanip > đẻ hiện được 6 số thập phân.</p>
+
+
+
+
+
 
 
 
