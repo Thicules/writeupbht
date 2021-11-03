@@ -5,7 +5,7 @@
 ## 1) Lưu đồ thuật toán.
 Vẽ được lưu đồ thuật toán cho các bài toán đơn giản.</p>
 *Các hình ký hiệu cơ bản trong lưu đồ thuật toán: </p>
-![image](https://user-images.githubusercontent.com/93419631/139913008-e63efa0c-cdf3-4cf6-a053-4aafc7de12b4.png)</p>
+![image](https://user-images.githubusercontent.com/93419631/140007015-ea1f97b5-d325-4dfd-a766-5dfbb9dbcf72.png)</p>
 ## 2) Recode #1.
   ![image](https://user-images.githubusercontent.com/93419631/139905083-51da9c84-73fd-4fcf-a030-90085d883e7d.png)</p>
   Hướng làm:</p>
@@ -17,6 +17,20 @@ Vẽ được lưu đồ thuật toán cho các bài toán đơn giản.</p>
  - Ta sẽ cho số nguyên n là một string, sau đó là cộng giá trị của kí tự trong string đó lại với nhau (đưa về số thứ trong trong ASCII trừ số thứ tự ‘0’ trong ASCII).</p>
  - Ngoài ra còn có thể dùng cách khác đó là chia lấy dư cho 10 để làm.</p>
 ![image](https://user-images.githubusercontent.com/93419631/139914060-3bd71c5b-72df-4bb4-8fca-9a18333b3866.png)</p>
+Hướng làm:</p>
+- Sử dụng biến num để tính tử, biến den để tính mẫu và dùng biến s để tính tổng.</p>
+- Sau đó cho vòng lặp để chạy từ 1 đến n, mỗi lần lập cho biến num nhân thêm x và biến den cộng thêm, tiếp đó tính tổng s=s+num/den.</p>
+![image](https://user-images.githubusercontent.com/93419631/140007121-6a6c7f26-36aa-4979-88c4-41f59939b665.png) </p>
+Hướng làm:</p>
+- Ta nhận thấy sau mỗi số hạng thì nhân thêm x2  và sẽ đan dấu với nhau. </p>
+- Ta dùng biến s để tính tổng các số hạng, biến t tính mỗi số hạng i.</p>
+- Để tiết kiệm số phép tính nhân đầu tiên sẽ tính x2(x=x*x) trước.</p>
+- Để các số hạng đổi đẩu dấu sau mỗi lần lặp ta sẽ nhân với (-1) [t=t*x*(-1)].</p>
+- Cuói cùng ta sẽ tính tổng s (s=s+t).</p>
+
+
+
+
 
 	
 
