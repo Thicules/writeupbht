@@ -26,7 +26,7 @@ int main(){
   Hướng làm:</p>
 - Muốn có x^11ta phải lấy đươc x^5 -> x^2 </p>
 - Để biết được ta cần lấy những số nào ta sẽ chia cho 2:</p>
-  VD: 11\2= 5 dư 1, 5\2=2 dư 2\2=1 dư 0 chia cho đến khi dư 0, khoảng ngoài để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.</p>
+  VD: 11/2= 5 dư 1, 5/2=2 dư 2/2=1 dư 0 chia cho đến khi dư 0, khoảng ngoài để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.</p>
  <cau1>![image](https://user-images.githubusercontent.com/93419631/140100491-e1a59217-394c-431b-a473-b561a277b850.png)</p>
   **Code:** </p>
 ```
@@ -251,6 +251,57 @@ Hướng làm:</p>
 +Có hai cạnh bằng nhau  là tam giác cần.</p>
 +có ba cạnh bằng nhau là tam giác đều.</p>
 ( Sẽ có tam giác vừa vuông vừa cân nên trong tam giác vuông phải xét thêm tam giác cân. Lưu ý: phải xét tam giác đều trước khi xét tam giác cân).</p>
+<cau9>![image](https://user-images.githubusercontent.com/93419631/140127170-cd153451-00ca-4326-bc96-114f628bed4b.png)</p>
+**Code:**</p>
+```
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int n;
+    float t;
+    cin>>n;
+    t=sqrt(n);
+    if (int(t)==t){
+        cout<<"n la so chinh phuong";
+    } else cout<<"n khong la so chinh phuong";
+    return 0;
+}
+```
+Hướng làm:</p>
+- Đầu tiên, số chính phương là số có căn bậc 2 là một số nguyên.</p>
+- Đưa vào tính chất của số chính phương ta sẽ tạo một biến t kiểu float để tính căn bậc 2 của n. </p>
+- Sau đó ép kiểu nguyên  t so với t nếu bằng là số chính phương.</p>
+-Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</p>
+<cau10>![image](https://user-images.githubusercontent.com/93419631/140129190-f8d54d82-5995-47ff-9b12-aee0fb848215.png)</p>
+**Code:**</p>
+```
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int n;
+    float t;
+    cin>>n;
+    t=log(n)/log(5);
+    if (int(t)==t){
+        cout<<"n co dang 5^m";
+    }else cout<<"n khong co dang 5^m";
+    return 0;
+}
+```
+Hướng làm:</P>
+- Ta sẽ sử dụng tính chất của hàm số log để kiểm tra.</p>
+- Nếu log(n)/log(5) là số thì n có dạng 5^m.</p>
+- Đúng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểu tra có phải là số nguyên không.</p>
+-Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</P>
+
+
+
+
+
 
 
 
