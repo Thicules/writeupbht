@@ -29,6 +29,23 @@ int main(){
   VD: 11\2= 5 dư 1, 5\2=2 dư 2\2=1 dư 0 chia cho đến khi dư 0, khoảng ngoài để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.</p>
   **Câu 2** Tính tổng các chữ số cúa số nguyên n.</p>
   **Code:** </p>
+``
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    string s;
+    cin>>s;
+    n=0;
+    for (int i=0;i<s.size();++i){
+        n=n+(s[i]-'0');
+    }
+    cout<<n;
+    return 0;
+}
+```
   *Ý tưởng:</p>
  - Ta sẽ cho số nguyên n là một string, sau đó là cộng giá trị của kí tự trong string đó lại với nhau (đưa về số thứ trong trong ASCII trừ số thứ tự ‘0’ trong ASCII).</p>
  - Ngoài ra còn có thể dùng cách khác đó là chia lấy dư cho 10 để làm.</p>
