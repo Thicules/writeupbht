@@ -5,10 +5,24 @@
 ## 1) Lưu đồ thuật toán.
 Vẽ được lưu đồ thuật toán cho các bài toán đơn giản.</p>
 *Các hình ký hiệu cơ bản trong lưu đồ thuật toán: </p>
-<cau1>![image](https://user-images.githubusercontent.com/93419631/140007015-ea1f97b5-d325-4dfd-a766-5dfbb9dbcf72.png)</p>
+![image](https://user-images.githubusercontent.com/93419631/140007015-ea1f97b5-d325-4dfd-a766-5dfbb9dbcf72.png)</p>
 ## 2) Recode #1.
-  ![image](https://user-images.githubusercontent.com/93419631/139905083-51da9c84-73fd-4fcf-a030-90085d883e7d.png)</p>
+  <cau1>![image](https://user-images.githubusercontent.com/93419631/139905083-51da9c84-73fd-4fcf-a030-90085d883e7d.png)</p>
   **Code:** </p>
+  ```
+  #include <iostream>
+using namespace std;
+
+int main(){
+    int x,x2,x5,x11;
+    cin>>x;
+    x2=x*x;
+    x5=x2*x2*x;
+    x11=x5*x5*x;
+    cout<<x11;
+    return 0;
+}
+```
   Hướng làm:</p>
 - Muốn có x^11ta phải lấy đươc x^5 -> x^2 </p>
 - Để biết được ta cần lấy những số nào ta sẽ chia cho 2:</p>
