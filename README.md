@@ -100,7 +100,7 @@ Hướng làm: </P>
 - Ta dùng biến s để tính tổng các số hạng, biến t tính mỗi số hạng i.</p>
 - Để tiết kiệm số phép tính nhân đầu tiên sẽ tính x^2(x=x*x) trước.</p>
 - Để các số hạng đổi dấu sau mỗi lần lặp ta sẽ nhân với (-1) .</p>
-- CuốCuốii cùng ta sẽ tính tổng s (s=s+t).</p>
+- Cuối cùng ta sẽ tính tổng s (s=s+t).</p>
 <Cau5>![image](https://user-images.githubusercontent.com/93419631/140030913-aacd626c-a3fd-4cd2-bfc9-c65f874d7b66.png)</p>
 **Code:** </p>
 ```
@@ -295,7 +295,7 @@ int main(){
 Hướng làm:</P>
 - Ta sẽ sử dụng tính chất của hàm số log để kiểm tra.</p>
 - Nếu log(n)/log(5) là số nguyên thì n có dạng 5^m.</p>
-- Đúng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểu tra có phải là số nguyên không.</p>
+- Đúng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểm tra  có phải là số nguyên không.</p>
 -Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</P>
 
 
