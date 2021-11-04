@@ -100,7 +100,7 @@ Hướng làm: </P>
 - Ta dùng biến s để tính tổng các số hạng, biến t tính mỗi số hạng i.</p>
 - Để tiết kiệm số phép tính nhân đầu tiên sẽ tính x^2(x=x*x) trước.</p>
 - Để các số hạng đổi dấu sau mỗi lần lặp ta sẽ nhân với (-1) .</p>
-- Cuo cùng ta sẽ tính tổng s (s=s+t).</p>
+- CuốCuốii cùng ta sẽ tính tổng s (s=s+t).</p>
 <Cau5>![image](https://user-images.githubusercontent.com/93419631/140030913-aacd626c-a3fd-4cd2-bfc9-c65f874d7b66.png)</p>
 **Code:** </p>
 ```
@@ -271,7 +271,7 @@ int main(){
 ```
 Hướng làm:</p>
 - Đầu tiên, số chính phương là số có căn bậc 2 là một số nguyên.</p>
-- Đưa vào tính chất của số chính phương ta sẽ tạo một biến t kiểu float để tính căn bậc 2 của n. </p>
+- DựaDựa vào tính chất của số chính phương ta sẽ tạo một biến t kiểu float để tính căn bậc 2 của n. </p>
 - Sau đó ép kiểu nguyên  t so với t nếu bằng là số chính phương.</p>
 -Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</p>
 <cau10>![image](https://user-images.githubusercontent.com/93419631/140129190-f8d54d82-5995-47ff-9b12-aee0fb848215.png)</p>
