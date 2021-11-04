@@ -296,7 +296,7 @@ Hướng làm:</P>
 - Ta sẽ sử dụng tính chất của hàm số log để kiểm tra.</p>
 - Nếu log(n)/log(5) là số nguyên thì n có dạng 5^m.</p>
 - Đúng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểm tra  có phải là số nguyên không.</p>
--Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</P>
+- Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</P>
 
 
 
