@@ -24,7 +24,7 @@ int main(){
 }
 ```
   Hướng làm:</p>
-- Muốn có $x^11$ ta phải lấy đươc x^5 -> x^2 </p>
+- Muốn có x^11 ta phải lấy đươc x^5 -> x^2 </p>
 - Để biết được ta cần lấy những số nào ta sẽ chia cho 2:</p>
   VD: 11/2= 5 dư 1, 5/2=2 dư 2/2=1 dư 0 chia cho đến khi dư 0, ngoài ra để biết số phép dư tối thiểu sẽ là số phép chia và số phép chia có dư cộng lại.</p>
  <cau1>![image](https://user-images.githubusercontent.com/93419631/140100491-e1a59217-394c-431b-a473-b561a277b850.png)</p>
@@ -295,7 +295,7 @@ int main(){
 Hướng làm:</P>
 - Ta sẽ sử dụng tính chất của hàm số log để kiểm tra.</p>
 - Nếu log(n)/log(5) là số nguyên thì n có dạng 5^m.</p>
-- Đúng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểm tra  có phải là số nguyên không.</p>
+- Dùng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểm tra  có phải là số nguyên không.</p>
 - Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</P>
 
 
