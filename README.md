@@ -100,7 +100,7 @@ Hướng làm: </P>
 - Ta dùng biến s để tính tổng các số hạng, biến t tính mỗi số hạng i.</p>
 - Để tiết kiệm số phép tính nhân đầu tiên sẽ tính x^2(x=x*x) trước.</p>
 - Để các số hạng đổi dấu sau mỗi lần lặp ta sẽ nhân với (-1) .</p>
-- Cuói cùng ta sẽ tính tổng s (s=s+t).</p>
+- Cuo cùng ta sẽ tính tổng s (s=s+t).</p>
 <Cau5>![image](https://user-images.githubusercontent.com/93419631/140030913-aacd626c-a3fd-4cd2-bfc9-c65f874d7b66.png)</p>
 **Code:** </p>
 ```
