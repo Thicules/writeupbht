@@ -73,7 +73,7 @@ int main(){
 ```
 Hướng làm:</p>
 - Sử dụng biến num để tính tử, biến den để tính mẫu và dùng biến s để tính tổng.</p>
-- Sau đó cho vòng lặp để chạy từ 1 đến n, mỗi lần lặp cho biến num nhân thêm x và biến den cộng thêm, tiếp đó tính tổng s=s+num/den.</p>
+- Sau đó cho vòng lặp để chạy từ 1 đến n, mỗi lần lặp cho biến num nhân thêm x và biến den cộng thêm i, tiếp đó tính tổng s=s+num/den.</p>
 <Cau4>![image](https://user-images.githubusercontent.com/93419631/140007121-6a6c7f26-36aa-4979-88c4-41f59939b665.png) </p>
 **Code:**</p>
 ```
@@ -124,7 +124,7 @@ int main()
 }
 ```
 Hướng làm:</p>
-- Nhận thấy sau mỗi lần căn mũ của x sẽ lên 1 đơn vị.</p>
+- Nhận thấy sau mỗi lần căn bậc 2 số mũ của x sẽ tăng lên 1 đơn vị.</p>
 - Ta sẽ tính căn từ trong ra ngoài. Dùng biến biến s để tính tổng, biến t để tính x^i.</p>
 (Bài này để tính căn bậc 2 sẽ sử dụng hàm sqrt bằng cách sài thư viện <math.h>).</p>
 <Cau6>![image](https://user-images.githubusercontent.com/93419631/140033120-48af12ac-cb02-409b-b559-39c0cfd419bb.png)</p>
@@ -153,7 +153,7 @@ int main()
 Hướng làm:</p>
 - Đầu tiên một tổng có độ chính xác 10^-6  là gì? Một tổng có độ chính xác 10^-6 là số hạng nhỏ nhất trong tổng đó sẽ >=10-6 sẽ chính xác đến  6 số thập phân không chính xác hơn hơn 6 số thập phân.</p>
 - Vì vậy ta dùng một hàng số e=10^-6 để so sánh độ chính xác, dùng biến s để lưu cái tổng đó, ta sẽ tính s=s+1/i cho đến khi 1/i nhỏ hơn e (Trong phần dùng code dùng 1.0/i để ép kiểu số thực).</p>
-- Trong phần code còn sử dụng hàm setprecision trong thư viện < iomanip > đẻ hiện được 6 số thập phân.</p>
+- Trong phần code còn sử dụng hàm setprecision trong thư viện < iomanip > để hiện được 6 số thập phân.</p>
 ![image](https://user-images.githubusercontent.com/93419631/140117692-a01d3d8d-fe3c-4991-b893-3bae6006e498.png)</p>
 **Code:**</p>
 ```
@@ -271,9 +271,9 @@ int main(){
 ```
 Hướng làm:</p>
 - Đầu tiên, số chính phương là số có căn bậc 2 là một số nguyên.</p>
-- DựaDựa vào tính chất của số chính phương ta sẽ tạo một biến t kiểu float để tính căn bậc 2 của n. </p>
+- Dựa vào tính chất của số chính phương ta sẽ tạo một biến t kiểu float để tính căn bậc 2 của n. </p>
 - Sau đó ép kiểu nguyên  t so với t nếu bằng là số chính phương.</p>
--Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</p>
+- Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</p>
 <cau10>![image](https://user-images.githubusercontent.com/93419631/140129190-f8d54d82-5995-47ff-9b12-aee0fb848215.png)</p>
 **Code:**</p>
 ```
@@ -295,7 +295,7 @@ int main(){
 Hướng làm:</P>
 - Ta sẽ sử dụng tính chất của hàm số log để kiểm tra.</p>
 - Nếu log(n)/log(5) là số nguyên thì n có dạng 5^m.</p>
-- Dùng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểm tra  có phải là số nguyên không.</p>
+- Dùng t kiểu float để tính log(n)/log(5) sau đó ép kiểu kiểm tra t có phải là số nguyên không.</p>
 - Ngoài ra nếu không muốn sử dụng thư viên math.h ta có thể dụng vòng lặp for để làm.</P>
 
 
