@@ -1,4 +1,4 @@
-# **WRITEUP BHT**
+# **WRITEUP Ban Học Tập | Đoàn khoa Mạng máy tính và Truyền thông**
 ## I)Tổng quan.
   Đây là những kiến thức mình học được khi tham gia Ban học tập đoàn Khoa mạng máy tính và truyền thông, trường Đại học Công nghệ thông tin</p>
 ## II) Chi Tiết
